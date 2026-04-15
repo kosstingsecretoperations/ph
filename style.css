@@ -1,0 +1,420 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+  /* 🔥 Image + Animated Gradient */
+  background:
+    url(BG213.png) no-repeat center center / cover,  /* full cover image */
+    linear-gradient(-45deg, #1a1a1a, #2c3e50, #000000, #3a1c1c); /* animated gradient */
+
+  background-size: cover, 400% 400%;
+  background-position: center, 0% 50%;
+  background-repeat: no-repeat, repeat;
+
+  
+
+  z-index: -2;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🔥 Particles */
+.particles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.particles span {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: orange;
+  border-radius: 50%;
+  animation: floatUp 6s linear infinite;
+  opacity: 0;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(100vh) scale(0.5); opacity: 0; }
+  30% { opacity: 1; }
+  100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+}
+
+/* 🔷 Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: rgb(0, 0, 0);
+}
+
+.logo {
+  width: 110px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+
+nav ul li a:hover {
+  color: #f0eeea;
+  text-shadow: 
+    0 0 5px #080b0bb3,
+    0 0 10px #010101e7,
+    0 0 20px #050c0ca2;
+}
+
+
+
+
+nav button {
+  padding: 10px 20px;
+  background: orange;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+/* 🔷 Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: rgba(0, 0, 0, 0.639);
+}
+
+
+
+
+
+
+.logo {
+  width: 180px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: rgba(183, 183, 183, 0.851);
+  text-decoration: none;
+}
+
+nav button {
+  padding: 10px 20px;
+  background: orange;
+  border: none;
+  color: black;
+  cursor: pointer;
+
+ }
+
+  /* === MAIN CONTENT === */
+  main {
+    flex: 1;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+  }
+
+nav button {
+  padding: 10px 20px;
+  background: orange;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+/* Hover effect */
+nav button:hover {
+  background: darkorange;       /* darker color on hover */
+  color: white;                 /* text color changes */
+  transform: scale(1.05);       /* slight grow effect */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0); /* subtle shadow */
+}
+
+
+/* 🔷 Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 50px;
+}
+
+.hero h6 {
+  font-weight: normal;
+  max-width: 700px;
+  margin: auto;
+  opacity: 0.8;
+}
+
+.hero button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: red;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;            /* rounded corners */
+  transition: all 0.3s ease;     /* smooth hover animation */
+}
+
+
+/* 🎥 Video */
+video {
+  width: 80%;
+  max-width: 600px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+/* Left: video */
+.hero-left video {
+  width: 600px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:10px;
+
+}
+.footer{
+  text-align:center;
+  padding:10px;
+  background:#000;
+}
+
+.footer-icons{
+  margin-top:10px;
+}
+
+.footer-icons{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin-top:10px;
+}
+
+.icon-box{
+  width:70px;
+  height:70px;
+  background:#1e2a38;
+  border-radius:15px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.icon-box i{
+  color:white;
+  font-size:28px;
+}
+/* Hover effect 🔥 */
+.icon-box:hover{
+  background:yellow;
+  transform:translateY(-5px);
+}
+
+.icon-box:hover i{
+  color:black;
+}
+/* UPDATES SECTION */
+.updates {
+  text-align: center;
+  padding: 30px;
+  color: white;
+}
+
+/* TITLE */
+.updates h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* SUBTEXT */
+.updates p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+/* IMAGE CONTAINER */
+.update-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+/* IMAGES */
+.update-img img {
+  width: 80%;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+  transition: 0.3s;
+}
+
+
+
+/* HOVER EFFECT 🔥 */
+.update-img img:hover {
+  transform: scale(1.03);
+}
+
+/* TEXT INSIDE */
+.update-img h1 {
+  font-size: 28px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* SUPPORT SECTION */
+.support {
+  text-align: center;
+  padding: 40px;
+}
+
+/* TITLE */
+.support h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+/* LAYOUT */
+.support-box {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+}
+
+form textarea {
+  height: 100px;
+}
+
+/* BUTTON */
+.hero button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: red;
+  border: none;
+  color: rgb(218, 2, 2);
+  cursor: pointer;
+  border-radius: 6px;            /* rounded corners */
+  transition: all 0.3s ease;     /* smooth hover animation */
+}
+
+/* BUTTON */
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background: #b40000;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+/* CONTACT BOX */
+.contact-info {
+  background: rgba(0,0,0,0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+button:hover {
+  background: #ff0505;
+  transform: scale(1.05);
+}
+
+/* CHAT BOX */
+.chat-box {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 250px;
+  background: rgba(0,0,0,0.8);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.chat-content {
+  height: 100px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+.tutorial {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.tutorial-content img {
+    width: 300px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.tutorial-content video {
+    width: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+

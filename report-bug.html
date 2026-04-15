@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<head>
+  <meta charset="UTF-8">
+  <title>Report Bug</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background: url('Blue-Protocol-Anime-MMO-1080x608.webp') no-repeat center center; background-size: cover; min-height: 100vh;">
+
+<section class="support">
+
+  <h1>SUPPORT & REPORT BUG</h1>
+
+  <div class="support-box">
+
+    <!-- ✅ FIXED FORM -->
+    
+      <form action="https://formspree.io/f/mjgpabwo" method="POST">
+  <input type="hidden" name="_subject" value="New Bug Report!">
+
+  <input type="text" name="name" placeholder="Your Name" required>
+  
+  <input type="email" name="email" placeholder="Your Email" required>
+  
+  <textarea name="message" placeholder="Report bug..." required></textarea>
+  
+  <button type="submit">Send</button>
+</form>
+
+    <!-- CONTACT SIDE -->
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <p>Email: newdiv1ce143@gmail.com</p>
+      <p>Discord: KOS LAUNCHER</p>
+      <button onclick="openChat()">💬 Live Chat</button>
+    </div>
+
+  </div>
+
+  <!-- CHAT BOX -->
+  <div id="chatBox" class="chat-box" style="display:none;">
+    <h3>Support Chat</h3>
+    <div class="chat-content">
+      <p><b>Bot:</b> Hello! How can I help you?</p>
+    </div>
+    <input type="text" placeholder="Type a message...">
+  </div>
+
+</section>
+
+<script>
+function openChat() {
+  document.getElementById("chatBox").style.display = "block";
+}
+</script>
+
+</body>
+</html>
